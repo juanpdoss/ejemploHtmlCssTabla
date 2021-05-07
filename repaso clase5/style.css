@@ -1,0 +1,112 @@
+#div
+{
+    background-color: brown;
+    display: flex;
+    flex-direction:column;
+    z-index: 0;  
+
+
+}
+
+#tabla
+{
+    background-color: khaki;
+    border:1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+}
+
+#tabla th,#tabla td
+{
+    border: 1px solid #ddd;
+    padding: 8px;
+    
+}
+
+#tabla tr:nth-child(even)
+{
+    background-color: #f2f2f2;
+}
+
+#tabla tr:hover 
+{
+    background-color: #ddd;
+}
+
+#tabla th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn
+{
+    background-color: aquamarine;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    font-style:inherit;
+    font-size: 5rem;
+    align-self: flex-end;
+    
+    
+    
+}
+
+#divAlta
+{  
+    /* display:flex; */
+     align-items: flex-start;
+    flex-direction: row;
+    justify-content:flex-start;
+    z-index: 1;
+    position: absolute;
+    align-self: center;
+    background-color: lemonchiffon;
+    width: 20%;
+    height: 20%;
+    animation-name: Animacion;
+    animation-duration: 1s ;
+
+}
+
+.btnAlta
+{    
+    background-color: pink; 
+    width: 4rem;
+    height: 3rem;
+    border-radius: 1rem;
+}
+
+
+label
+{
+    color:black ; 
+    font-family: sans-serif;
+}
+
+
+@keyframes Animacion 
+{
+    from
+    {
+        height: 0%;
+        width: 0%;
+        background-color: brown;
+        opacity: 0;
+
+    }
+    to 
+    {
+        width: 20%;
+        height: 20%;
+
+    }
+}
+
+
+
+
